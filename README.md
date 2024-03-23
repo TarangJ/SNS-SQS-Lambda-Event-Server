@@ -4,10 +4,10 @@ This application demonstrates a simple architecture for handling events asynchro
 
 Technologies Used:
 
-    Amazon SNS: A fully managed pub/sub messaging service.
-    Amazon SQS: A fully managed message queuing service.
-    AWS Lambda: A serverless compute service for running code in response to events.
-    AWS IAM: Identity and Access Management for managing permissions.
+ Amazon SNS: A fully managed pub/sub messaging service.
+ Amazon SQS: A fully managed message queuing service.
+ AWS Lambda: A serverless compute service for running code in response to events.
+ AWS IAM: Identity and Access Management for managing permissions.
 
 Setup and Deployment
 
@@ -34,6 +34,15 @@ To set up and deploy this application, follow these steps:
 ![Screenshot from 2024-03-23 18-56-01](https://github.com/TarangJ/Event-Driven-Serverless-Application-with-AWS-SNS-SQS-and-Lambda/assets/65700353/317f3d95-4f5e-4da7-a2fc-a484742d114e)
 
 3. Deploy Lambda Function: Upload the Lambda function code and configure the trigger to listen to messages from the SQS queue.
+
+      exports.handler = async function(event,context){
+        event.Records.forEach(record => {
+        const { body } = record;
+        console.log(body);
+    });
+    return {};
+}
+
    - Lambda Function Logic: The Lambda function processMessages listens to messages from the SQS queue and logs the message body to the console.
    - Then hit "deploy"
 
