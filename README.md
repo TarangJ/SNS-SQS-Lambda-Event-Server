@@ -3,11 +3,10 @@
 This application demonstrates a simple architecture for handling events asynchronously in a scalable and cost-effective manner.
 
 Technologies Used:
-
- Amazon SNS: A fully managed pub/sub messaging service.
- Amazon SQS: A fully managed message queuing service.
- AWS Lambda: A serverless compute service for running code in response to events.
- AWS IAM: Identity and Access Management for managing permissions.
+ - Amazon SNS: A fully managed pub/sub messaging service.
+ - Amazon SQS: A fully managed message queuing service.
+ - AWS Lambda: A serverless compute service for running code in response to events.
+ - AWS IAM: Identity and Access Management for managing permissions.
 
 Setup and Deployment
 
