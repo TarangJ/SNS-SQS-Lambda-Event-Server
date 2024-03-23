@@ -31,6 +31,8 @@ To set up and deploy this application, follow these steps:
 
 ![Screenshot from 2024-03-23 18-55-42](https://github.com/TarangJ/Event-Driven-Serverless-Application-with-AWS-SNS-SQS-and-Lambda/assets/65700353/f1d9bc0a-d697-4b25-8cd2-ac87d9879ee8)
 
+![Screenshot from 2024-03-23 18-56-01](https://github.com/TarangJ/Event-Driven-Serverless-Application-with-AWS-SNS-SQS-and-Lambda/assets/65700353/317f3d95-4f5e-4da7-a2fc-a484742d114e)
+
 3. Deploy Lambda Function: Upload the Lambda function code and configure the trigger to listen to messages from the SQS queue.
    - Lambda Function Logic: The Lambda function processMessages listens to messages from the SQS queue and logs the message body to the console.
    - Then hit "deploy"
